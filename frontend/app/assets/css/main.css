@@ -8,10 +8,107 @@
  */
 /*----- FONTS-------
 ----------------------*/
+@font-face {
+  font-family: 'eurostileregular';
+  src: url("../fonts/Eurostile-webfont.eot");
+  src: url("../fonts/Eurostile-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-webfont.woff2") format("woff2"), url("../fonts/Eurostile-webfont.woff") format("woff"), url("../fonts/Eurostile-webfont.ttf") format("truetype"), url("../fonts/Eurostile-webfont.svg#eurostileregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'JuraRegular';
+  src: url("../fonts/jura/Jura-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'JuraBold';
+  src: url("../fonts/jura/Jura-DemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'bebas-neue';
+  src: url("../fonts/bebasneue-webfont.eot");
+  src: url("../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue-webfont.woff") format("woff"), url("../fonts/bebasneue-webfont.ttf") format("truetype"), url("../fonts/bebasneue-webfont.svg#BebasNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*-----VARIABLES----
 -----------------------*/
 /*-----MIX-INS AND PLACEHOLDER -------
 -----------------------*/
+/*
+*   @description
+*   Generates border radius for a given element
+*   @example
+*  .selector {
+*       @include border-radius(5px);
+*   }
+*/
+/*
+*   @description
+*   Generates opacity for a given element
+*   @example
+*  .selector {
+*       @include opacity(5px);
+*   }
+*/
+/*
+*   @description
+*   Generates box shadow for a given element
+*   @example
+*  .selector {
+*       @include box-shadow(5px 5px 10px 5px #aaa);
+*   }
+*/
+/*
+*   @description
+*   Generates text shadow for a given element
+*   @example
+*  .selector {
+*       @include text-shadow(5px 5px 10px 5px #aaa);
+*   }
+*/
+/*
+ * @description
+ * Generates a linear gradient for a given element with a fallback color.
+ * @example
+ *   .selector {
+ *     @include linear-gradient("to bottom", #ccc, #ddd, #bbb);
+ *   }
+ */
+/*
+ * @description
+ * Generates `placeholder` content for a given element
+  * @example
+ *   .selector {
+ *     @include x-placeholder {
+ *         color: #bada55;
+ *         font-weight: bold;
+ *     }
+ *   }
+ */
+/*
+ * @description
+ * Generates cross-browser-compatible `transform` for a given element
+ * @example
+ *   .selector {
+ *     @include x-transform(rotate(1deg));
+ *   }
+ */
+/*
+ * @description
+ * Generates cross-browser-compatible `transition` output for a given element.
+ * @example
+ *   .selector {
+ *     @include x-transition(background 0.3s ease-in);
+ *   }
+ */
+/*
+ * @description
+ * Centers  a given element .
+ * @example
+ *   .selector {
+ *      @include center(true, false);
+ *   }
+ */
 /*
 *   @description
 *   Generates border radius for a given element
